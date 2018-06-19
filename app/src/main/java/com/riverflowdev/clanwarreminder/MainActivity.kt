@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity(), ViewMainActivity {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         presenter = Presenter(this);
+        println("yodd")
 
         loginButton.setOnClickListener { presenter.login(userTag.text.toString()) }
     }
