@@ -6,7 +6,7 @@ import jcrapi.request.ClanWarRequest
 import jcrapi.request.ProfileRequest
 import java.util.*
 
-class ApiUtil {
+class RoyalApi {
 
     private var api: Api? = null
 

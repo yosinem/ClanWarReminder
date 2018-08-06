@@ -11,10 +11,12 @@ import org.junit.Test
 class ExampleUnitTest {
     @Test
     fun addition_isCorrect() {
+        val userTag = UserTag("123")
+        userTag.validate()
         assertEquals(4, 2 + 2)
-        val clanTag = ApiUtil().getClanTagByUserTag("P2GC9ROQ")
-        val clanWar = ApiUtil().getClanWarByClanTag(clanTag)
-        val clanWar1 = ApiUtil().getClanWarByClanTag(clanTag)
+        //val clanTag = RoyalApi().getClanTagByUserTag("P2GC9ROQ")
+        //val clanWar = RoyalApi().getClanWarByClanTag(clanTag)
+        //val clanWar1 = RoyalApi().getClanWarByClanTag(clanTag)
 
     }
 }
