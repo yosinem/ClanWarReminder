@@ -24,10 +24,8 @@ class Presenter(val view: ViewMainActivity) {
         val action = intent.action
         val type = intent.type
 
-        if (Intent.ACTION_SEND == action && type != null) {
-            if (type.startsWith("image/")) {
-
-            }
+        if (Intent.ACTION_SEND == action && type != null && type.startsWith("image/")) {
+            // TODO call ML shit
         }
     }
 }
